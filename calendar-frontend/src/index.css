@@ -1,0 +1,113 @@
+/* 1. Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* 2. Define CSS Variables (Light Theme) */
+:root {
+  --font-sans: 'Inter', sans-serif;
+  
+  --color-brand: #6366F1;
+  --color-brand-hover: #4F46E5;
+  --color-brand-light: #eef2ff;
+  --color-brand-contrast: #ffffff;
+  --color-brand-shadow: rgba(99, 102, 241, 0.3);
+
+  --color-bg: #ffffff;
+  --color-bg-alt: #fcfcfc;
+  --color-bg-today: #f9f9ff;
+  
+  --color-border: #f0f0f0;
+  --color-border-light: #f5f5f5;
+  --color-border-dark: #e0e0e0;
+  
+  --color-text-primary: #111111;
+  --color-text-secondary: #555555;
+  --color-text-tertiary: #777777;
+  --color-text-quarterly: #aaaaaa;
+
+  --color-timeline: #EF4444;
+
+  /* Event Colors (Light) */
+  --event-green-bg: #D1FAE5;
+  --event-green-border: #10B981;
+  --event-green-text: #065F46;
+  --event-red-bg: #FEE2E2;
+  --event-red-border: #EF4444;
+  --event-red-text: #991B1B;
+  --event-blue-bg: #DBEAFE;
+  --event-blue-border: #3B82F6;
+  --event-blue-text: #1E40AF;
+  --event-yellow-bg: #FEF3C7;
+  --event-yellow-border: #F59E0B;
+  --event-yellow-text: #92400E;
+  --event-gray-bg: #F3F4F6;
+  --event-gray-border: #6B7280;
+  --event-gray-text: #374151;
+}
+
+/* 3. Define Dark Mode Variables */
+[data-theme='dark'] {
+  --color-brand: #818cf8;
+  --color-brand-hover: #a7b0ff;
+  --color-brand-light: #3730a3;
+  --color-brand-contrast: #ffffff;
+  --color-brand-shadow: rgba(129, 140, 248, 0.2);
+
+  --color-bg: #111111;
+  --color-bg-alt: #1a1a1a;
+  --color-bg-today: #1e1e2f;
+
+  --color-border: #2c2c2c;
+  --color-border-light: #222222;
+  --color-border-dark: #3a3a3a;
+  
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #aaaaaa;
+  --color-text-tertiary: #888888;
+  --color-text-quarterly: #555555;
+  
+  --color-timeline: #F87171;
+
+  /* Event Colors (Dark) */
+  --event-green-bg: #064E3B;
+  --event-green-border: #34D399;
+  --event-green-text: #A7F3D0;
+  --event-red-bg: #7F1D1D;
+  --event-red-border: #F87171;
+  --event-red-text: #FEE2E2;
+  --event-blue-bg: #1E3A8A;
+  --event-blue-border: #60A5FA;
+  --event-blue-text: #DBEAFE;
+  --event-yellow-bg: #78350F;
+  --event-yellow-border: #FBBF24;
+  --event-yellow-text: #FEF3C7;
+  --event-gray-bg: #374151;
+  --event-gray-border: #9CA3AF;
+  --event-gray-text: #F3F4F6;
+}
+
+/* 4. Basic CSS Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+[data-theme='dark'] input,
+[data-theme='dark'] select,
+[data-theme='dark'] textarea {
+  background-color: #2a2a2a;
+  border-color: var(--color-border-dark);
+  color: var(--color-text-primary);
+}
+
+[data-theme='dark'] input::placeholder {
+  color: var(--color-text-tertiary);
+}
