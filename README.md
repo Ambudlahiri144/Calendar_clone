@@ -8,7 +8,6 @@ It features:
 - **Full CRUD operations**
 - **Functional light/dark mode**
 
-> *(Note: You can replace the placeholder link below with a real screenshot of your app!)*
 
 ---
 
